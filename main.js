@@ -84,9 +84,8 @@
 // let str = '123'
 // Найти сумму '1' + '2' + '3' = ?
 
-// let str = "123"
-
-// console.log(str[0] * str[1] * str[2])
+// let str = "123";
+// console.log(str[0] * str[1] * str[2]);
 
 // Задание №5
 // Переменная num может принимать 4 значения: 1, 2, 3 или 4.
@@ -116,5 +115,131 @@
 // } else if (num === 4) {
 //   alert(`Вы ввели число ${num}. В переменной записалось "${res.season4}"`);
 // } else {
-//   alert("Ошибка! В году только 4 сезона");
+//   alert("error");
+// }
+
+//!HOMEWORK 22.09.24
+
+//? №1
+// что- то не так...
+// ["нога","тело","голова"] --> ["голова","тело","нога"]
+// ["вниз","середина","вверх"] --> ["вверх","середина","вниз"]
+// ["right","left"] --> ["left","right"]
+
+// let arr = ["right", "left"];
+// console.log(arr.reverse());
+
+//?№2
+// создайте логику светофора
+// которая подсказывает следующие цвета, если в переменному дать
+// "Красный" должно возвращать "Желтый" т.к. после красного
+// загорится желтый цвет
+// ("Желтый") --> "Зеленый"
+// ("Зеленый") --> "Красный"
+
+// let p1 = prompt("write color");
+
+// if (p1.toLowerCase() === "красный") {
+//   alert("Желтый");
+// } else if (p1.toLowerCase() === "желтый") {
+//   alert("Зеленый");
+// } else if (p1.toLowerCase() === "зеленый") {
+//   alert("Красный");
+// } else {
+//   alert("error");
+// }
+//?№3
+// у вас два числа a, b в виде строк должны найти сумму
+// let a = "1"
+// let b = "3"
+
+// "1","3" --> "4"
+// "10","11" --> "21"
+// "4","" --> "4"
+
+// let a = "11";
+// let b = "10";
+// let res = +a + +b;
+// console.log(res);
+
+//?№4
+// создайте логику которая возвратит аббревиатуру фамилии и имени
+// принимает строку, должна возвращать первые буквы
+// "Denzel Washington" --> "D.W"
+// "chuck norris" --> "C.N"
+// "cristiano Ronaldo" --> "C.R"
+
+// let str = "chuck norris";
+// let res = str[0].toUpperCase() + "." + str[str.indexOf(" ") + 1].toUpperCase();
+
+// console.log(res);
+
+//?№5
+// создайте логику, которая возвращает день недели в соответствии с введенным числом:
+
+// 1 возвращается "Monday"
+// 2 возвращается "Tuesday"
+// 3 возвращается "Wednesday"
+// 4 возвращается "Thursday"
+// 5 возвращается "Friday"
+// 6 возвращается "Saturday"
+// 7 возвращается "Sunday"
+// В противном случае возвращается "Wrong, please enter a number between 1 and 7"
+
+// switch..case
+
+// let num = +prompt("Write number");
+// switch (num) {
+//   case 1:
+//     console.log("Monday");
+//     break;
+//   case 2:
+//     console.log("Tuesday");
+//     break;
+//   case 3:
+//     console.log("Wednesday");
+//     break;
+//   case 4:
+//     console.log("Thursday");
+//     break;
+//   case 5:
+//     console.log("Friday");
+//     break;
+//   case 6:
+//     console.log("Saturday");
+//     break;
+//   case 7:
+//     console.log("Sunday");
+//     break;
+//   default:
+//     console.log("Wrong, please enter a number between 1 and 7");
+// }
+
+//?№6
+// преобразуйте массив в строку
+// ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
+// [1,2,3,4,5,6] => "1 2 3 4 5 6"
+// let arr = [1, 2, 3, 4, 5, 6];
+
+// let res = arr.join(" ");
+// console.log(res);
+
+//?№7
+// уберите пробелы в начале и в конце
+// str = "      8aaaaa dddd r     "
+
+// let str = "      8aaaaa dddd r     ";
+// console.log(str.trim());
+
+//?№8
+// создайте логику которая проверит заглавные ли все буквы
+// "a" --> false
+// "A" --> true
+// "DASgSMD" --> false
+
+// let str = "DASgSMD";
+// if (str === str.toUpperCase()) {
+//   console.log(true);
+// } else {
+//   console.log(false);
 // }
