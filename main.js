@@ -736,3 +736,321 @@
 // let firstWord = "Hello";
 // let secondWord = "World";
 // console.log(firstWord.length + secondWord.length);
+
+// let arr = [
+//   [1, 2],
+//   [3, 4],
+//   [5, 6],
+// ];
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+
+//   for (let j = 0; j < arr[i].length; j++) {
+//     console.log(j);
+//   }
+// }
+
+//? Задание №1
+// Дан массив ["Polina", "Mirdin", "Azret", "Aliia", "Aidana"]. Выведите в консоль имена
+//  Mirdin и Aliia с помощью цикла for
+
+// let arr = ["Polina", "Mirdin", "Azret", "Aliia", "Aidana"];
+
+// for (let i = 0; i < arr.length; i++) {
+//   //   console.log(i);idex arr
+//   if (i % 2 !== 0) {
+//     console.log(arr[i]);
+//   }
+// }
+
+// for (let i = 0; i < arr.length; i++) {
+//   //   console.log(arr[i]);
+//   //   console.log(i);
+//   if (i % 2 !== 0) {
+//     console.log(arr[i]);
+//   }
+// }
+// Задание №2
+// Создайте пустой массив и заполните его числами от 1 до 10 с помощью цикла for
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log(i);
+// }
+
+// Задание №3
+// Выведите в консоль все числа в промежутке с 50 до 99 включительно с помощью цикла.
+
+// for(let i = 99; i>= 50; i-- ){
+//     console.log(i);
+
+// }
+
+//! HOMEWORK 19.10.24
+//? №1
+// преобразуйте число в строку
+// 123  --> "123"
+// 999  --> "999"
+// -100 --> "-100"
+
+// let num = 123;
+
+// let res = num.toString();
+// console.log(res);
+
+//? №2
+// переворочивайте строку
+// 'world'  =>  'dlrow'
+// 'word'   =>  'drow'
+// let str = "world";
+// let res = str.split("").reverse().join("");
+// console.log(res);
+
+//? №10
+// преобразуйте string в number
+// "1234" --> 1234
+// "605"  --> 605
+// "1405" --> 1405
+// "-7" --> -7
+
+// let str = "123";
+// let res = Number(str);
+// console.log(res);
+
+//? №11
+// найдите среднее число в массиве
+// [1,2,3,4,5,6]
+// [10,14,8,21,33,15]
+
+// let arr = [1, 2, 3, 4, 5, 6];
+// let sum = 0;
+
+// for (let i of arr) {
+//   sum += i;
+// }
+// console.log(sum / arr.length);
+
+//? #15
+// удвойте числа в массиве используя циклы for, for in, for of
+// [1, 2, 3] --> [2, 4, 6]
+// [10,20,30] --> [20,40,60]
+
+// let num = [1, 2, 3];
+// let res = [];
+// for (let i in num) {
+//   res.push(num[i] * 2);
+// }
+// console.log(res);
+
+// let num = [1, 2, 3];
+// let res = [];
+// for (let i of num) {
+//   res.push(i * 2);
+// }
+// console.log(res);
+
+// let num = [1, 2, 3];
+// let res = [];
+// for (let i = 0; i < num.length; i++) {
+//   res.push(num[i] * 2);
+// }
+// console.log(res);
+
+//? №17
+// преобразуйте массив в строку
+// ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
+// [1,2,3,4,5,6] => "1 2 3 4 5 6"
+
+// let arr = ["hello", "world", "this", "is", "great"];
+// let res = arr.join(" ");
+// console.log(res);
+
+//? №18
+// дан массив, вернуть результат умножения значений по порядку
+// => 24, так как 1 * 2 * 3 * 4 = 24
+// использовать цикл
+// let arr = [1, 2, 3, 4];
+// let res = 1;
+// for (let i of arr) {
+//   res *= i;
+// }
+// console.log(res);
+
+//? №2
+// выводите нечетные числа из массива for of, for in
+// [1,2,3,4,5,6]
+
+// let arr = [1, 2, 3, 4, 5, 6];
+// for (let i in arr) {
+//   if (arr[i] % 2 !== 0) {
+//     console.log(arr[i]);
+//   }
+// }
+//? №8
+// найдите сумму двух массивов
+// [1, 2, 3], [4, 5, 6] --> 21
+
+// let arr = [1, 2, 3];
+// let arr2 = [4, 5, 6];
+// let newArr = arr.concat(arr2);
+// let res = 0;
+
+// for (let i of newArr) {
+//   res += i;
+// }
+// console.log(res);
+
+//? #15
+// Дан массив если хороших слов больше чем плохих, должно возвращать
+// "Rock!", иначе "Nice try:("
+// ["good","bad","good"] --> "Rock!"
+// ["bad","good","bad","bad"] --> "Nice try:("
+// ['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', "good", 'bad', 'good'] --> ?
+// let str = ["good", "bad", "good"];
+
+//? №17
+// преобразуйте каждые вторые элементы в массиве в заглавные буквы
+// ["hello","world","John","moon","Sun"] --> ["hello","WORLD","John","MOON","Sun"]
+// let arr = ["hello", "world", "John", "moon", "Sun"];
+// let res = [];
+
+// for (let i in arr) {
+//   if (i % 2 !== 0) {
+//     res.push(arr[i].toUpperCase());
+//   } else {
+//     res.push(arr[i]);
+//   }
+// }
+
+// console.log(res);
+
+//? №20
+// удалите каждые вторые элементы
+//   --> ["Sun","Sun","Sun"]
+// ["Moon","Sun","Moon"] --> ["Moon","Moon"]
+
+// let arr = ["Sun", "Moon", "Sun", "Moon", "Sun"];
+// let res = [];
+
+// for (let i in arr) {
+//   if (i % 2 === 0) {
+//     res.push(arr[i]);
+//   }
+// }
+// console.log(res);
+
+//? №21
+// let str = "Eagle"
+// let end = "e"
+// проверьте совпадает ли конечная буква
+// ("Eagle","e") --> true
+// ("Car","p") --> false
+// ("hello","o") --> true
+
+// let str = "Eagle";
+// let end = "e";
+// if (str[str.length - 1] === end) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+//? №1
+// проверьте все ли элементы в массиве number
+// [1,2,3,4,5] --> true
+// [1,"2","3",4,5] --> false
+
+// let arr = [1, 2, 3, 4, 5, "4"];
+// for (let i of arr) {
+//   if (typeof i === "number") {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   }
+// }
+
+//? №5
+// два массива соединяйте и отсортируйте
+// [1,4,9,5,2],[3,8,6,10,7]
+
+// let arr = [1, 4, 9, 5, 2],
+//   arr2 = [3, 8, 6, 10, 7];
+
+// let newArr = arr.concat(arr2).sort((a, b) => a - b);
+// console.log(newArr);
+
+//? №10
+// удалите пробелы в строках
+// "Hello World" => "HelloWorld"
+// " H e l l o " => "Hello"
+
+// let str = " H e l l o ";
+// let res = str.split(" ").join("");
+
+// console.log(res);
+
+//? №17
+// переменные a, b
+// возвращайте новый массив с числами между a и b
+// a = 1, b = 5 => [1,2,3,4,5]
+
+// let a = 1;
+// let b = 5;
+// let c = [];
+// for (let i = a; i <= b; i++) {
+//   c.push(i);
+// }
+// console.log(c);
+
+//? №18
+// Есть переменный , которая переворачивает слово.
+// С помощью for
+// let str = "JavaScript";
+// let arr = [];
+// вывод : "tpircSavaJ"
+// без reverse()
+
+// let str = "JavaScript";
+// let arr = [];
+// for (let i = 0; i < str.length; i++) {
+//   arr.unshift(str[i]);
+// }
+// console.log(arr.join(""));
+
+//? №19
+
+// Даны числы, необходимо
+// вернуть цифры этого числа в массиве в обратном порядке.
+// 12345 --> [5,4,3,2,1]
+// 31553 --> [3,5,5,1,3]
+
+// let arr = "12345";
+// let res = [];
+// for (let i = 0; i < arr.length; i++) {
+//   res.unshift(+arr[i]);
+// }
+// console.log(res);
+
+//? №20
+// Логика которая удваивает буквы в строке
+// "String"      -> "SSttrriinngg"
+// "Hello World" -> "HHeelllloo  WWoorrlld"
+
+// let str = "Hello World";
+// let newStr = "";
+// for (let i = 0; i < str.length; i++) {
+//   newStr += str[i] + str[i];
+// }
+// console.log(newStr);
+
+//? №21
+// Логика чтобы она возводила
+// в квадрат каждое число в массиве, а затем суммировала результаты.
+// Например, [1, 2, 2] он должен возвращать 9, потому что 1² + 2² + 2² = 9
+
+// let arr = [1, 2, 2];
+// let sum = 0;
+// for (let i of arr) {
+//   sum += i ** i;
+// }
+// console.log(sum);
